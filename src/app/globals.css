@@ -60,7 +60,7 @@
 }
 
 :root {
-  --background: oklch(0.9814 0.0045 258.3244);
+  --background: oklch(0.96 0.01 85);
   --foreground: oklch(0.1977 0.0341 265.4287);
   --card: oklch(1.0000 0 0);
   --card-foreground: oklch(0.1977 0.0341 265.4287);
@@ -77,7 +77,7 @@
   --destructive: oklch(0.6083 0.2090 27.0276);
   --destructive-foreground: oklch(1.0000 0 0);
   --border: oklch(0.9198 0.0098 252.8151);
-  --input: oklch(0.9814 0.0045 258.3244);
+  --input: oklch(0.96 0.01 85);
   --ring: oklch(0.5930 0.1769 136.1783);
   --chart-1: oklch(0.5930 0.1769 136.1783);
   --chart-2: oklch(0.6688 0.1589 259.7280);

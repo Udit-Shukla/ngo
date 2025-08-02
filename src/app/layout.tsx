@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NGO Name - Creating Positive Change",
+  title: "Swadhya - Creating Positive Change",
   description: "We are dedicated to creating positive change in communities through education, healthcare, and sustainable development initiatives.",
 };
 
