@@ -10,7 +10,7 @@ export default function ProjectsPage() {
       description: "Providing free educational resources and classes to underprivileged children in rural and urban areas.",
       impact: "500+ children enrolled",
       status: "Active",
-      image: "/image.png", // Placeholder - replace with actual project images
+      image: "/logo.webp", // Placeholder - replace with actual project images
       details: [
         "Free school supplies and textbooks",
         "After-school tutoring programs",
@@ -25,7 +25,7 @@ export default function ProjectsPage() {
       description: "Building wells and water purification systems in rural areas to provide clean drinking water.",
       impact: "10+ villages served",
       status: "Active",
-      image: "/image.png",
+      image: "/logo.webp",
       details: [
         "Hand pump installation",
         "Water purification systems",
@@ -40,7 +40,7 @@ export default function ProjectsPage() {
       description: "Organizing free health check-ups and awareness drives for the community.",
       impact: "2000+ people treated",
       status: "Active",
-      image: "/image.png",
+      image: "/logo.webp",
       details: [
         "Free medical check-ups",
         "Vaccination drives",
@@ -55,7 +55,7 @@ export default function ProjectsPage() {
       description: "Supporting women through skill development, entrepreneurship training, and financial literacy.",
       impact: "300+ women empowered",
       status: "Active",
-      image: "/image.png",
+      image: "/logo.webp",
       details: [
         "Vocational training programs",
         "Microfinance support",
@@ -70,7 +70,7 @@ export default function ProjectsPage() {
       description: "Tree planting initiatives and environmental awareness programs to promote sustainability.",
       impact: "5000+ trees planted",
       status: "Active",
-      image: "/image.png",
+      image: "/logo.webp",
       details: [
         "Tree plantation drives",
         "Environmental education",
@@ -85,7 +85,7 @@ export default function ProjectsPage() {
       description: "Providing immediate relief and support during natural disasters and emergencies.",
       impact: "Emergency response team",
       status: "On-call",
-      image: "/image.png",
+      image: "/logo.webp",
       details: [
         "Emergency food and shelter",
         "Medical aid during disasters",

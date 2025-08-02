@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <div className="font-sans min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <section className="w-full flex flex-col items-center justify-center py-24 px-4 text-center bg-gradient-to-b from-card to-background" id="hero">
+      <section className="w-full flex flex-col items-center justify-center py-16 px-4 text-center bg-gradient-to-b from-card to-background" id="hero">
         <div className="mb-8">
           <Image
-            src="/image.png"
+            src="/logo.webp"
             alt="NGO Logo and Tagline"
             width={400}
             height={200}

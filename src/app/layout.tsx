@@ -32,14 +32,18 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <nav className="w-full flex items-center justify-between py-4 px-6 bg-background/80 border-b border-border shadow-sm sticky top-0 z-50">
-          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <Image
-              src="/image.png"
+              src="/logo.webp"
               alt="NGO Logo"
-              width={120}
-              height={60}
-              className="h-12 w-auto"
+              width={40}
+              height={40}
+              className="h-10 w-10"
             />
+            <div className="hidden sm:block">
+              <div className="font-bold text-lg text-primary">Swadhya</div>
+              <div className="text-xs text-muted-foreground">Swayam se Shuruwat</div>
+            </div>
           </Link>
           
           {/* Desktop Navigation */}

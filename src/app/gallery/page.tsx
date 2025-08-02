@@ -15,7 +15,7 @@ export default function GalleryPage() {
       title: "Children Learning in Our Education Center",
       category: "Education",
       description: "Students engaged in interactive learning activities",
-      image: "/image.png", // Replace with actual image
+      image: "/logo.webp", // Replace with actual image
       date: "2024"
     },
     {
@@ -23,7 +23,7 @@ export default function GalleryPage() {
       title: "Healthcare Camp in Rural Village",
       category: "Healthcare",
       description: "Free medical check-ups for community members",
-      image: "/image.png",
+      image: "/logo.webp",
       date: "2024"
     },
     {
@@ -31,7 +31,7 @@ export default function GalleryPage() {
       title: "Clean Water Project Completion",
       category: "Water Projects",
       description: "Celebrating the completion of water purification system",
-      image: "/image.png",
+      image: "/logo.webp",
       date: "2024"
     },
     {
@@ -39,7 +39,7 @@ export default function GalleryPage() {
       title: "Women's Skill Development Workshop",
       category: "Women Empowerment",
       description: "Training session on entrepreneurship and financial literacy",
-      image: "/image.png",
+      image: "/logo.webp",
       date: "2024"
     },
     {
@@ -47,7 +47,7 @@ export default function GalleryPage() {
       title: "Tree Plantation Drive",
       category: "Environmental",
       description: "Community members planting trees for environmental conservation",
-      image: "/image.png",
+      image: "/logo.webp",
       date: "2024"
     },
     {
@@ -55,7 +55,7 @@ export default function GalleryPage() {
       title: "Annual Volunteer Recognition Event",
       category: "Events",
       description: "Celebrating our dedicated volunteers and their contributions",
-      image: "/image.png",
+      image: "/logo.webp",
       date: "2024"
     },
     {
@@ -63,7 +63,7 @@ export default function GalleryPage() {
       title: "Volunteer Teaching Session",
       category: "Volunteers",
       description: "Our volunteers conducting educational sessions",
-      image: "/image.png",
+      image: "/logo.webp",
       date: "2024"
     },
     {
@@ -71,7 +71,7 @@ export default function GalleryPage() {
       title: "Computer Literacy Class",
       category: "Education",
       description: "Students learning basic computer skills",
-      image: "/image.png",
+      image: "/logo.webp",
       date: "2024"
     },
     {
@@ -79,7 +79,7 @@ export default function GalleryPage() {
       title: "Vaccination Drive",
       category: "Healthcare",
       description: "Immunization program for children and adults",
-      image: "/image.png",
+      image: "/logo.webp",
       date: "2024"
     },
     {
@@ -87,7 +87,7 @@ export default function GalleryPage() {
       title: "Water Well Installation",
       category: "Water Projects",
       description: "Installing hand pumps in rural communities",
-      image: "/image.png",
+      image: "/logo.webp",
       date: "2024"
     },
     {
@@ -95,7 +95,7 @@ export default function GalleryPage() {
       title: "Women's Leadership Training",
       category: "Women Empowerment",
       description: "Empowering women with leadership and communication skills",
-      image: "/image.png",
+      image: "/logo.webp",
       date: "2024"
     },
     {
@@ -103,7 +103,7 @@ export default function GalleryPage() {
       title: "Community Clean-up Campaign",
       category: "Environmental",
       description: "Volunteers cleaning up local areas and promoting waste management",
-      image: "/image.png",
+      image: "/logo.webp",
       date: "2024"
     }
   ];
@@ -218,7 +218,7 @@ export default function GalleryPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 bg-muted rounded-lg overflow-hidden">
               <Image
-                src="/image.png"
+                src="/logo.webp"
                 alt="Featured Story"
                 fill
                 className="object-cover"

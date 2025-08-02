@@ -34,13 +34,19 @@ export default function MobileNav() {
           <div className="flex flex-col h-full">
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-border">
-              <Image
-                src="/image.png"
-                alt="NGO Logo"
-                width={100}
-                height={50}
-                className="h-10 w-auto"
-              />
+              <div className="flex items-center gap-2">
+                <Image
+                  src="/logo.webp"
+                  alt="NGO Logo"
+                  width={32}
+                  height={32}
+                  className="h-8 w-8"
+                />
+                <div>
+                  <div className="font-bold text-sm text-primary">Swadhya</div>
+                  <div className="text-xs text-muted-foreground">Swayam se Shuruwat</div>
+                </div>
+              </div>
               <button 
                 onClick={toggleMenu}
                 className="p-2 hover:bg-muted rounded-md transition-colors"
