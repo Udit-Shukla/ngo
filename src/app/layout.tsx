@@ -26,9 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         <nav className="w-full flex items-center justify-between py-4 px-6 bg-background/80 border-b border-border shadow-sm sticky top-0 z-50">
           <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
