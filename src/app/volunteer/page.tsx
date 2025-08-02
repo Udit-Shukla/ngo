@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function VolunteerPage() {
@@ -126,7 +125,7 @@ export default function VolunteerPage() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-primary tracking-tight">Volunteer With Us</h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Join our team of dedicated volunteers and help us create positive change in communities. 
-            Your time, skills, and passion can make a real difference in someone's life.
+            Your time, skills, and passion can make a real difference in someone&apos;s life.
           </p>
         </div>
       </section>
@@ -320,8 +319,8 @@ export default function VolunteerPage() {
                 </div>
               </div>
               <p className="text-muted-foreground">
-                "Volunteering as a teaching assistant has been incredibly rewarding. Seeing the children's 
-                progress and their enthusiasm for learning makes every moment worthwhile."
+                &ldquo;Volunteering as a teaching assistant has been incredibly rewarding. Seeing the children&apos;s 
+                progress and their enthusiasm for learning makes every moment worthwhile.&rdquo;
               </p>
             </div>
 
@@ -336,8 +335,8 @@ export default function VolunteerPage() {
                 </div>
               </div>
               <p className="text-muted-foreground">
-                "Being part of the healthcare camps has shown me the real impact we can have on people's lives. 
-                The gratitude from the communities we serve is overwhelming."
+                &ldquo;Being part of the healthcare camps has shown me the real impact we can have on people&apos;s lives. 
+                The gratitude from the communities we serve is overwhelming.&rdquo;
               </p>
             </div>
           </div>
