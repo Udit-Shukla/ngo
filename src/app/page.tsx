@@ -21,9 +21,9 @@ export default function Home() {
           <span className="text-foreground">Transforming Lives</span>
         </h1>
         <p className="max-w-3xl mx-auto text-lg sm:text-xl mb-10 text-muted-foreground leading-relaxed">
-          We are a dedicated non-profit organization committed to creating lasting positive change 
-          through education, healthcare, and sustainable development initiatives that empower 
-          communities to build their own future.
+          Swadhyay Foundation is dedicated to promoting moral values, self-development, and self-discipline in society. 
+          We inspire individuals towards self-awareness, social responsibility, and empowerment through Swadhyay (self-study), 
+          creating lasting positive change in communities.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
@@ -48,13 +48,12 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="text-3xl sm:text-4xl font-bold text-primary">Our Mission</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We believe that every individual deserves access to basic human rights and opportunities. 
-                Our mission is to empower communities through sustainable development, education, and 
-                healthcare initiatives that create lasting positive change.
+                The mission of Swadhyay Foundation is to promote moral values, self-development, and self-discipline in society. 
+                Our priority is to inspire individuals towards self-awareness, social responsibility, and empowerment through Swadhyay (self-study).
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                By addressing the root causes of social challenges and building resilient communities, 
-                we work towards a world where every person can thrive and reach their full potential.
+                We aim to build a society where each individual not only introspects but also leads society in a positive direction 
+                through their thoughts and actions, working in areas such as education, health, environment, and character building.
               </p>
               <div className="flex gap-4">
                 <Link
@@ -65,37 +64,44 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-primary text-xl">📚</span>
+            <div className="space-y-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary">Our Vision</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Creating a self-sufficient, aware, and educated society where each person leverages their inner power 
+                to drive sustainable growth and progress.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4">
+                  <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                      <span className="text-primary text-xl">📚</span>
+                    </div>
+                    <h3 className="font-semibold text-lg mb-2">Education</h3>
+                    <p className="text-sm text-muted-foreground">Providing quality education and learning opportunities</p>
                   </div>
-                  <h3 className="font-semibold text-lg mb-2">Education</h3>
-                  <p className="text-sm text-muted-foreground">Providing quality education and learning opportunities</p>
+                  <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                      <span className="text-primary text-xl">🏥</span>
+                    </div>
+                    <h3 className="font-semibold text-lg mb-2">Healthcare</h3>
+                    <p className="text-sm text-muted-foreground">Ensuring access to basic healthcare services</p>
+                  </div>
                 </div>
-                <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-primary text-xl">🏥</span>
+                <div className="space-y-4 mt-8">
+                  <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                      <span className="text-primary text-xl">💧</span>
+                    </div>
+                    <h3 className="font-semibold text-lg mb-2">Clean Water</h3>
+                    <p className="text-sm text-muted-foreground">Building sustainable water infrastructure</p>
                   </div>
-                  <h3 className="font-semibold text-lg mb-2">Healthcare</h3>
-                  <p className="text-sm text-muted-foreground">Ensuring access to basic healthcare services</p>
-                </div>
-              </div>
-              <div className="space-y-4 mt-8">
-                <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-primary text-xl">💧</span>
+                  <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+                      <span className="text-primary text-xl">👩‍💼</span>
+                    </div>
+                    <h3 className="font-semibold text-lg mb-2">Empowerment</h3>
+                    <p className="text-sm text-muted-foreground">Supporting women and community leadership</p>
                   </div>
-                  <h3 className="font-semibold text-lg mb-2">Clean Water</h3>
-                  <p className="text-sm text-muted-foreground">Building sustainable water infrastructure</p>
-                </div>
-                <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-primary text-xl">👩‍💼</span>
-                  </div>
-                  <h3 className="font-semibold text-lg mb-2">Empowerment</h3>
-                  <p className="text-sm text-muted-foreground">Supporting women and community leadership</p>
                 </div>
               </div>
             </div>
@@ -113,14 +119,14 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">100+</div>
+              <div className="text-muted-foreground font-medium">Elderly Served</div>
+              <div className="text-xs text-muted-foreground mt-1">Through old age home care</div>
+            </div>
+            <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">500+</div>
               <div className="text-muted-foreground font-medium">Children Educated</div>
               <div className="text-xs text-muted-foreground mt-1">Across 15 communities</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">10+</div>
-              <div className="text-muted-foreground font-medium">Villages Served</div>
-              <div className="text-xs text-muted-foreground mt-1">With clean water access</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">2000+</div>
@@ -140,49 +146,35 @@ export default function Home() {
       <section className="py-20 px-4 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-4">Our Core Programs</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">Our Programs</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              We focus on four key areas that address the most critical needs of communities 
-              and create sustainable, long-term impact.
+              We focus on eight key areas that address the most critical needs of communities 
+              and create sustainable, long-term impact through self-development and empowerment.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-card p-8 rounded-lg shadow-sm border border-border text-center hover:shadow-md transition-shadow group">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/30 transition-colors">
+                <span className="text-primary text-2xl">👴</span>
+              </div>
+              <h3 className="font-semibold text-xl mb-3">Old Age Home</h3>
+              <p className="text-muted-foreground mb-6">
+                Providing care, support, and dignity to elderly individuals through 
+                comprehensive healthcare and social services.
+              </p>
+              <Link href="/projects" className="text-primary hover:text-primary/80 font-medium transition-colors">
+                Learn More →
+              </Link>
+            </div>
+            
+            <div className="bg-card p-8 rounded-lg shadow-sm border border-border text-center hover:shadow-md transition-shadow group">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/30 transition-colors">
                 <span className="text-primary text-2xl">📚</span>
               </div>
-              <h3 className="font-semibold text-xl mb-3">Education for All</h3>
+              <h3 className="font-semibold text-xl mb-3">Child Education</h3>
               <p className="text-muted-foreground mb-6">
-                Providing free educational resources, computer literacy, and after-school programs 
-                to ensure every child has access to quality education.
-              </p>
-              <Link href="/projects" className="text-primary hover:text-primary/80 font-medium transition-colors">
-                Learn More →
-              </Link>
-            </div>
-            
-            <div className="bg-card p-8 rounded-lg shadow-sm border border-border text-center hover:shadow-md transition-shadow group">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/30 transition-colors">
-                <span className="text-primary text-2xl">🏥</span>
-              </div>
-              <h3 className="font-semibold text-xl mb-3">Healthcare Access</h3>
-              <p className="text-muted-foreground mb-6">
-                Organizing free medical camps, vaccination drives, and health awareness programs 
-                to improve community health outcomes.
-              </p>
-              <Link href="/projects" className="text-primary hover:text-primary/80 font-medium transition-colors">
-                Learn More →
-              </Link>
-            </div>
-            
-            <div className="bg-card p-8 rounded-lg shadow-sm border border-border text-center hover:shadow-md transition-shadow group">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/30 transition-colors">
-                <span className="text-primary text-2xl">💧</span>
-              </div>
-              <h3 className="font-semibold text-xl mb-3">Clean Water Initiative</h3>
-              <p className="text-muted-foreground mb-6">
-                Building wells, installing water purification systems, and providing 
-                sustainable access to clean drinking water in rural communities.
+                Ensuring quality education for every child through comprehensive 
+                learning programs and educational support systems.
               </p>
               <Link href="/projects" className="text-primary hover:text-primary/80 font-medium transition-colors">
                 Learn More →
@@ -195,13 +187,38 @@ export default function Home() {
               </div>
               <h3 className="font-semibold text-xl mb-3">Women Empowerment</h3>
               <p className="text-muted-foreground mb-6">
-                Supporting women through skill development, entrepreneurship training, 
-                and leadership programs to create economic independence.
+                Empowering women through skill development, leadership training, 
+                and economic independence programs.
               </p>
               <Link href="/projects" className="text-primary hover:text-primary/80 font-medium transition-colors">
                 Learn More →
               </Link>
             </div>
+            
+            <div className="bg-card p-8 rounded-lg shadow-sm border border-border text-center hover:shadow-md transition-shadow group">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/30 transition-colors">
+                <span className="text-primary text-2xl">🏥</span>
+              </div>
+              <h3 className="font-semibold text-xl mb-3">Medical Health Care</h3>
+              <p className="text-muted-foreground mb-6">
+                Providing comprehensive healthcare services, medical camps, 
+                and health awareness programs for communities.
+              </p>
+              <Link href="/projects" className="text-primary hover:text-primary/80 font-medium transition-colors">
+                Learn More →
+              </Link>
+            </div>
+          </div>
+          
+          {/* View All Programs Button */}
+          <div className="text-center mt-12">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-primary/90 transition-all transform hover:scale-105"
+            >
+              View All Programs
+              <span className="text-lg">→</span>
+            </Link>
           </div>
         </div>
       </section>

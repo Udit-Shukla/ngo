@@ -1,16 +1,35 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function ProjectsPage() {
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const projects = [
     {
       id: 1,
-      title: "Education for All",
+      title: "Old Age Home",
+      category: "Elderly Care",
+      description: "Providing comprehensive care, support, and dignity to elderly individuals through healthcare and social services.",
+      impact: "100+ elderly served",
+      status: "Active",
+      image: "/logo.webp",
+      details: [
+        "24/7 healthcare support",
+        "Social activities and recreation",
+        "Nutrition and dietary care",
+        "Family counseling and support"
+      ]
+    },
+    {
+      id: 2,
+      title: "Child Education",
       category: "Education",
-      description: "Providing free educational resources and classes to underprivileged children in rural and urban areas.",
+      description: "Ensuring quality education for every child through comprehensive learning programs and educational support systems.",
       impact: "500+ children enrolled",
       status: "Active",
-      image: "/logo.webp", // Placeholder - replace with actual project images
+      image: "/logo.webp",
       details: [
         "Free school supplies and textbooks",
         "After-school tutoring programs",
@@ -19,40 +38,10 @@ export default function ProjectsPage() {
       ]
     },
     {
-      id: 2,
-      title: "Clean Water Initiative",
-      category: "Infrastructure",
-      description: "Building wells and water purification systems in rural areas to provide clean drinking water.",
-      impact: "10+ villages served",
-      status: "Active",
-      image: "/logo.webp",
-      details: [
-        "Hand pump installation",
-        "Water purification systems",
-        "Hygiene awareness programs",
-        "Maintenance training for communities"
-      ]
-    },
-    {
       id: 3,
-      title: "Healthcare Camps",
-      category: "Healthcare",
-      description: "Organizing free health check-ups and awareness drives for the community.",
-      impact: "2000+ people treated",
-      status: "Active",
-      image: "/logo.webp",
-      details: [
-        "Free medical check-ups",
-        "Vaccination drives",
-        "Health awareness workshops",
-        "Referral to specialized care"
-      ]
-    },
-    {
-      id: 4,
       title: "Women Empowerment",
       category: "Social Development",
-      description: "Supporting women through skill development, entrepreneurship training, and financial literacy.",
+      description: "Empowering women through skill development, leadership training, and economic independence programs.",
       impact: "300+ women empowered",
       status: "Active",
       image: "/logo.webp",
@@ -64,10 +53,40 @@ export default function ProjectsPage() {
       ]
     },
     {
+      id: 4,
+      title: "Basic Human Needs",
+      category: "Social Welfare",
+      description: "Addressing fundamental human needs including food, shelter, and essential services for vulnerable communities.",
+      impact: "1000+ families supported",
+      status: "Active",
+      image: "/logo.webp",
+      details: [
+        "Food distribution programs",
+        "Shelter assistance",
+        "Essential supplies provision",
+        "Emergency relief support"
+      ]
+    },
+    {
       id: 5,
-      title: "Environmental Conservation",
+      title: "Medical Health Care",
+      category: "Healthcare",
+      description: "Providing comprehensive healthcare services, medical camps, and health awareness programs for communities.",
+      impact: "2000+ people treated",
+      status: "Active",
+      image: "/logo.webp",
+      details: [
+        "Free medical check-ups",
+        "Vaccination drives",
+        "Health awareness workshops",
+        "Referral to specialized care"
+      ]
+    },
+    {
+      id: 6,
+      title: "Environment Conservation",
       category: "Environment",
-      description: "Tree planting initiatives and environmental awareness programs to promote sustainability.",
+      description: "Promoting environmental awareness, tree plantation, and sustainable practices for a greener future.",
       impact: "5000+ trees planted",
       status: "Active",
       image: "/logo.webp",
@@ -79,23 +98,43 @@ export default function ProjectsPage() {
       ]
     },
     {
-      id: 6,
-      title: "Disaster Relief",
-      category: "Emergency Response",
-      description: "Providing immediate relief and support during natural disasters and emergencies.",
-      impact: "Emergency response team",
-      status: "On-call",
+      id: 7,
+      title: "Women's Rights",
+      category: "Advocacy",
+      description: "Advocating for women's rights, legal awareness, and gender equality through education and support programs.",
+      impact: "200+ women supported",
+      status: "Active",
       image: "/logo.webp",
       details: [
-        "Emergency food and shelter",
-        "Medical aid during disasters",
-        "Rehabilitation support",
-        "Disaster preparedness training"
+        "Legal awareness workshops",
+        "Rights education programs",
+        "Support groups and counseling",
+        "Advocacy and policy work"
+      ]
+    },
+    {
+      id: 8,
+      title: "Poverty Eradication",
+      category: "Economic Development",
+      description: "Working towards poverty eradication through skill development, economic opportunities, and sustainable livelihood programs.",
+      impact: "500+ families uplifted",
+      status: "Active",
+      image: "/logo.webp",
+      details: [
+        "Skill development training",
+        "Micro-enterprise support",
+        "Financial literacy programs",
+        "Sustainable livelihood creation"
       ]
     }
   ];
 
-  const categories = ["All", "Education", "Healthcare", "Infrastructure", "Social Development", "Environment", "Emergency Response"];
+  const categories = ["All", "Elderly Care", "Education", "Social Development", "Social Welfare", "Healthcare", "Environment", "Advocacy", "Economic Development"];
+
+  // Filter projects based on selected category
+  const filteredProjects = selectedCategory === "All" 
+    ? projects 
+    : projects.filter(project => project.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-background">
@@ -116,12 +155,12 @@ export default function ProjectsPage() {
           <h2 className="text-3xl font-bold text-primary text-center mb-12">Our Impact</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
-              <div className="text-muted-foreground">Children Educated</div>
+              <div className="text-4xl font-bold text-primary mb-2">100+</div>
+              <div className="text-muted-foreground">Elderly Served</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">10+</div>
-              <div className="text-muted-foreground">Villages Served</div>
+              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-muted-foreground">Children Educated</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">2000+</div>
@@ -142,7 +181,12 @@ export default function ProjectsPage() {
             {categories.map((category) => (
               <button
                 key={category}
-                className="px-6 py-2 rounded-full border border-border hover:border-primary hover:text-primary transition-colors"
+                onClick={() => setSelectedCategory(category)}
+                className={`px-6 py-2 rounded-full border transition-colors ${
+                  selectedCategory === category
+                    ? "border-primary text-primary bg-primary/10"
+                    : "border-border hover:border-primary hover:text-primary"
+                }`}
               >
                 {category}
               </button>
@@ -150,53 +194,67 @@ export default function ProjectsPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <div key={project.id} className="bg-card rounded-lg shadow-sm border border-border overflow-hidden hover:shadow-md transition-shadow">
-                <div className="h-48 bg-muted flex items-center justify-center">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={400}
-                    height={200}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-sm text-primary font-medium">{project.category}</span>
-                    <span className={`text-xs px-2 py-1 rounded-full ${
-                      project.status === 'Active' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
-                    }`}>
-                      {project.status}
-                    </span>
+            {filteredProjects.length > 0 ? (
+              filteredProjects.map((project) => (
+                <div key={project.id} className="bg-card rounded-lg shadow-sm border border-border overflow-hidden hover:shadow-md transition-shadow">
+                  <div className="h-48 bg-muted flex items-center justify-center">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={400}
+                      height={200}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 text-card-foreground">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
-                  <div className="text-sm text-primary font-medium mb-4">{project.impact}</div>
-                  
-                  <div className="space-y-2 mb-6">
-                    <h4 className="font-medium text-sm text-card-foreground">Key Activities:</h4>
-                    <ul className="text-sm text-muted-foreground space-y-1">
-                      {project.details.slice(0, 3).map((detail, index) => (
-                        <li key={index} className="flex items-start">
-                          <span className="text-primary mr-2">•</span>
-                          {detail}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-sm text-primary font-medium">{project.category}</span>
+                      <span className={`text-xs px-2 py-1 rounded-full ${
+                        project.status === 'Active' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
+                      }`}>
+                        {project.status}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2 text-card-foreground">{project.title}</h3>
+                    <p className="text-muted-foreground mb-4">{project.description}</p>
+                    <div className="text-sm text-primary font-medium mb-4">{project.impact}</div>
+                    
+                    <div className="space-y-2 mb-6">
+                      <h4 className="font-medium text-sm text-card-foreground">Key Activities:</h4>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        {project.details.slice(0, 3).map((detail, index) => (
+                          <li key={index} className="flex items-start">
+                            <span className="text-primary mr-2">•</span>
+                            {detail}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
-                  <div className="flex gap-3">
-                    <button className="flex-1 bg-primary text-primary-foreground py-2 px-4 rounded-md text-sm font-medium hover:bg-primary/90 transition-colors">
-                      Learn More
-                    </button>
-                    <button className="px-4 py-2 border border-border rounded-md text-sm font-medium hover:border-primary hover:text-primary transition-colors">
-                      Support
-                    </button>
+                    <div className="flex gap-3">
+                      <button className="flex-1 bg-primary text-primary-foreground py-2 px-4 rounded-md text-sm font-medium hover:bg-primary/90 transition-colors">
+                        Learn More
+                      </button>
+                      <button className="px-4 py-2 border border-border rounded-md text-sm font-medium hover:border-primary hover:text-primary transition-colors">
+                        Support
+                      </button>
+                    </div>
                   </div>
                 </div>
+              ))
+            ) : (
+              <div className="col-span-full text-center py-12">
+                <div className="text-muted-foreground text-lg mb-4">
+                  No projects found in the selected category.
+                </div>
+                <button 
+                  onClick={() => setSelectedCategory("All")}
+                  className="text-primary hover:text-primary/80 font-medium transition-colors"
+                >
+                  View all projects →
+                </button>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>

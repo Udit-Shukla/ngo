@@ -6,9 +6,9 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="w-full py-20 px-4 text-center bg-card">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-primary tracking-tight">About Our Organization</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-primary tracking-tight">About Swadhyay Foundation</h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Learn about our journey, mission, and the dedicated team working to create positive change in our community.
+            Learn about our journey, mission, and the dedicated team working to promote moral values, self-development, and self-discipline in society.
           </p>
         </div>
       </section>
@@ -19,18 +19,22 @@ export default function AboutPage() {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-primary">Our Mission</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We are committed to empowering communities through sustainable development, education, and healthcare initiatives. 
-              Our mission is to create lasting positive change by addressing the root causes of social challenges and building 
-              resilient communities that can thrive independently.
+              The mission of Swadhyay Foundation is to promote moral values, self-development, and self-discipline in society. 
+              Our priority is to inspire individuals towards self-awareness, social responsibility, and empowerment through Swadhyay (self-study).
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              We aim to build a society where each individual not only introspects but also leads society in a positive direction 
+              through their thoughts and actions, working in areas such as education, health, environment, and character building.
             </p>
             <div className="bg-muted/50 p-6 rounded-lg">
               <h3 className="font-semibold text-lg mb-2">What We Do</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li>• Provide educational resources to underprivileged children</li>
-                <li>• Build sustainable water and sanitation systems</li>
-                <li>• Organize healthcare camps and awareness programs</li>
-                <li>• Support community development initiatives</li>
-                <li>• Advocate for social justice and equality</li>
+                <li>• Old Age Home care and support services</li>
+                <li>• Child education and development programs</li>
+                <li>• Women empowerment and rights advocacy</li>
+                <li>• Basic human needs and poverty eradication</li>
+                <li>• Medical healthcare and awareness programs</li>
+                <li>• Environment conservation initiatives</li>
               </ul>
             </div>
           </div>
@@ -38,8 +42,8 @@ export default function AboutPage() {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-primary">Our Vision</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We envision a world where every individual has access to basic necessities, quality education, and healthcare. 
-              A world where communities are self-sufficient, empowered, and capable of creating their own sustainable future.
+              Creating a self-sufficient, aware, and educated society where each person leverages their inner power 
+              to drive sustainable growth and progress.
             </p>
             <div className="bg-primary/10 p-6 rounded-lg border border-primary/20">
               <h3 className="font-semibold text-lg mb-2 text-primary">Our Values</h3>
@@ -72,19 +76,19 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-primary mb-8">Our Story</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Founded in [Year], our organization began with a simple belief: that every individual deserves access to 
-              basic human rights and opportunities. What started as a small group of passionate volunteers has grown into 
-              a comprehensive community development organization.
+              Founded with the vision of promoting moral values and self-development, Swadhyay Foundation began with 
+              the belief that true transformation comes from within. Our journey started with the philosophy of Swadhyay (self-study) 
+              and has evolved into a comprehensive organization dedicated to societal upliftment.
             </p>
             <p>
-              Over the years, we have touched the lives of thousands of individuals across [regions/communities], 
-              implementing sustainable solutions that address the root causes of poverty, lack of education, and 
-              inadequate healthcare.
+              Over the years, we have touched the lives of thousands of individuals across communities, 
+              implementing programs that focus on self-awareness, social responsibility, and character building. 
+              Our approach emphasizes the importance of introspection and personal growth in creating lasting change.
             </p>
             <p>
-              Today, we continue to expand our reach and impact, always guided by our core values and the needs 
-              of the communities we serve. Our journey is far from over, and we invite you to be part of this 
-              transformative mission.
+              Today, we continue to expand our reach and impact, always guided by our core values of moral development, 
+              self-discipline, and community service. Our journey is far from over, and we invite you to be part of this 
+              transformative mission towards building a self-sufficient, aware, and educated society.
             </p>
           </div>
         </div>
