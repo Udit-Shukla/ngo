@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -99,39 +100,79 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-primary text-center mb-12">Our Leadership Team</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Team Member 1 */}
-            <div className="bg-card p-6 rounded-lg shadow-sm border border-border text-center">
-              <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl text-muted-foreground">👤</span>
+            {/* Team Member 1 - Sandhya Chauhan */}
+            <div className="bg-card p-6 rounded-lg shadow-lg border border-border text-center hover:shadow-xl transition-shadow duration-300">
+              <div className="w-32 h-32 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                <Image
+                  src="/images/sandhyachauhan.jpeg"
+                  alt="Sandhya Chauhan - Director"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="font-semibold text-lg mb-1">Executive Director</h3>
-              <p className="text-sm text-muted-foreground mb-3">[Name]</p>
-              <p className="text-sm text-muted-foreground">
-                Leading our organization with over [X] years of experience in community development and social work.
+              <h3 className="font-semibold text-lg mb-1">Sandhya Chauhan</h3>
+              <p className="text-sm text-primary font-medium mb-3">Director</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                An accomplished businesswoman and dedicated homemaker with 8 years of experience in social work. 
+                Passionate about empowering people and making a positive impact in her community. Her family is her strength.
               </p>
             </div>
 
-            {/* Team Member 2 */}
-            <div className="bg-card p-6 rounded-lg shadow-sm border border-border text-center">
-              <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl text-muted-foreground">👤</span>
+            {/* Team Member 2 - Swati Shukla */}
+            <div className="bg-card p-6 rounded-lg shadow-lg border border-border text-center hover:shadow-xl transition-shadow duration-300">
+              <div className="w-32 h-32 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                <Image
+                  src="/images/swatishukla.jpeg"
+                  alt="Swati Shukla - Managing Director"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="font-semibold text-lg mb-1">Program Director</h3>
-              <p className="text-sm text-muted-foreground mb-3">[Name]</p>
-              <p className="text-sm text-muted-foreground">
-                Overseeing our educational and healthcare initiatives with expertise in program management.
+              <h3 className="font-semibold text-lg mb-1">Swati Shukla</h3>
+              <p className="text-sm text-primary font-medium mb-3">Managing Director</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                A skilled teacher with 7 years of experience, actively involved in social welfare programs. 
+                Her philosophy: &ldquo;If you want to go far, you have to walk. If you want to make society better, you have to change yourself.&rdquo;
               </p>
             </div>
 
-            {/* Team Member 3 */}
-            <div className="bg-card p-6 rounded-lg shadow-sm border border-border text-center">
-              <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl text-muted-foreground">👤</span>
+            {/* Team Member 3 - Anil Kumar Shukla */}
+            <div className="bg-card p-6 rounded-lg shadow-lg border border-border text-center hover:shadow-xl transition-shadow duration-300">
+              <div className="w-32 h-32 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                <Image
+                  src="/images/anijlkumar.jpeg"
+                  alt="Anil Kumar Shukla - Chief Adviser"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="font-semibold text-lg mb-1">Community Outreach</h3>
-              <p className="text-sm text-muted-foreground mb-3">[Name]</p>
-              <p className="text-sm text-muted-foreground">
-                Building partnerships and connecting with communities to understand their needs and priorities.
+              <h3 className="font-semibold text-lg mb-1">Mr. Anil Kumar Shukla</h3>
+              <p className="text-sm text-primary font-medium mb-3">Chief Adviser</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Providing strategic guidance and leadership to our organization. 
+                His expertise and experience help shape our mission and vision for community development.
+              </p>
+            </div>
+
+            {/* Team Member 4 - Shubham */}
+            <div className="bg-card p-6 rounded-lg shadow-lg border border-border text-center hover:shadow-xl transition-shadow duration-300">
+              <div className="w-32 h-32 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                <Image
+                  src="/images/shubham.jpeg"
+                  alt="Shubham - Volunteer Coordinator"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="font-semibold text-lg mb-1">Mr. Shubham</h3>
+              <p className="text-sm text-primary font-medium mb-3">Volunteer Coordinator</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Managing and coordinating our volunteer programs and community outreach initiatives. 
+                Ensuring smooth coordination between volunteers and community needs.
               </p>
             </div>
           </div>

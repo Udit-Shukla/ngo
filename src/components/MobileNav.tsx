@@ -80,6 +80,15 @@ export default function MobileNav() {
                 </li>
                 <li>
                   <Link 
+                    href="/news" 
+                    onClick={toggleMenu}
+                    className="block text-lg font-medium text-foreground hover:text-primary transition-colors"
+                  >
+                    News
+                  </Link>
+                </li>
+                <li>
+                  <Link 
                     href="/gallery" 
                     onClick={toggleMenu}
                     className="block text-lg font-medium text-foreground hover:text-primary transition-colors"

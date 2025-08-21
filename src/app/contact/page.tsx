@@ -1,36 +1,35 @@
 import Link from "next/link";
+import { MapPin, Mail, Phone, Clock, Instagram, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 
 export default function ContactPage() {
   const contactInfo = [
     {
-      icon: "📍",
+      icon: <MapPin className="w-8 h-8 text-primary" />,
       title: "Main Office",
       details: [
-        "123 Community Street",
-        "City, State 12345",
-        "United States"
+        "1611/26 Kashyap Nagar",
+        "Kalyanpur, Kanpur Nagar",
+        "Uttar Pradesh, India"
       ]
     },
     {
-      icon: "📧",
+      icon: <Mail className="w-8 h-8 text-primary" />,
       title: "Email",
       details: [
-        "info@ngoname.org",
-        "volunteer@ngoname.org",
-        "donations@ngoname.org"
+        "swadhyafoundation@gmail.com"
       ]
     },
     {
-      icon: "📞",
+      icon: <Phone className="w-8 h-8 text-primary" />,
       title: "Phone",
       details: [
-        "+1 (555) 123-4567",
-        "+1 (555) 123-4568",
-        "Emergency: +1 (555) 999-0000"
+        "+91 (XXX) XXX-XXXX",
+        "+91 (XXX) XXX-XXXX",
+        "Emergency: +91 (XXX) XXX-XXXX"
       ]
     },
     {
-      icon: "⏰",
+      icon: <Clock className="w-8 h-8 text-primary" />,
       title: "Office Hours",
       details: [
         "Monday - Friday: 9:00 AM - 6:00 PM",
@@ -41,11 +40,11 @@ export default function ContactPage() {
   ];
 
   const socialMedia = [
-    { name: "Facebook", icon: "📘", url: "#" },
-    { name: "Twitter", icon: "🐦", url: "#" },
-    { name: "Instagram", icon: "📷", url: "#" },
-    { name: "LinkedIn", icon: "💼", url: "#" },
-    { name: "YouTube", icon: "📺", url: "#" }
+    { name: "Facebook", icon: <Facebook className="w-5 h-5" />, url: "#" },
+    { name: "Twitter", icon: <Twitter className="w-5 h-5" />, url: "#" },
+    { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: "https://instagram.com/swadhya_foundation312" },
+    { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, url: "#" },
+    { name: "YouTube", icon: <Youtube className="w-5 h-5" />, url: "#" }
   ];
 
   return (
@@ -69,7 +68,7 @@ export default function ContactPage() {
             {contactInfo.map((info, index) => (
               <div key={index} className="bg-card p-6 rounded-lg shadow-sm border border-border text-center">
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">{info.icon}</span>
+                  {info.icon}
                 </div>
                 <h3 className="font-semibold text-lg mb-3">{info.title}</h3>
                 <div className="space-y-1">
@@ -175,13 +174,22 @@ export default function ContactPage() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-4">Visit Our Office</h3>
-                <div className="bg-muted h-64 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-muted-foreground">
-                    <div className="text-4xl mb-2">🗺️</div>
-                    <p>Interactive Map</p>
-                    <p className="text-sm">123 Community Street, City, State 12345</p>
-                  </div>
+                <div className="bg-muted rounded-lg overflow-hidden">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119.23!2d80.2807937!3d26.4789875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c381cf6fc4311%3A0x59fab8ca6c618cb8!2s1611%2C%20Kalyanpur%20-%20Vijay%20Nagar%20Rd%2C%20Rawatpur%20Gaon%2C%20Kanpur%2C%20Uttar%20Pradesh%20208019!5e0!3m2!1sen!2sin!4v1703157890123"
+                    width="100%" 
+                    height="256" 
+                    style={{border:1}} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Swadhyay Foundation Office Location"
+                    className="w-full h-64"
+                  />
                 </div>
+                <p className="text-sm text-muted-foreground mt-2 text-center">
+                  1611, Kalyanpur - Vijay Nagar Rd, Rawatpur Gaon, Kanpur, UP 208019
+                </p>
               </div>
 
               <div>
@@ -193,7 +201,7 @@ export default function ContactPage() {
                       href={social.url}
                       className="flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-md hover:border-primary hover:text-primary transition-colors"
                     >
-                      <span>{social.icon}</span>
+                      {social.icon}
                       <span className="text-sm">{social.name}</span>
                     </a>
                   ))}
@@ -272,12 +280,12 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white/10 p-6 rounded-lg">
               <h3 className="font-semibold text-lg mb-2">Emergency Hotline</h3>
-              <p className="text-2xl font-bold mb-2">+1 (555) 999-0000</p>
+              <p className="text-2xl font-bold mb-2">+91 (XXX) XXX-XXXX</p>
               <p className="text-sm opacity-90">Available 24/7 for emergency situations</p>
             </div>
             <div className="bg-white/10 p-6 rounded-lg">
               <h3 className="font-semibold text-lg mb-2">Disaster Response</h3>
-              <p className="text-2xl font-bold mb-2">+1 (555) 999-0001</p>
+              <p className="text-2xl font-bold mb-2">+91 (XXX) XXX-XXXX</p>
               <p className="text-sm opacity-90">For disaster relief and emergency aid</p>
             </div>
           </div>
