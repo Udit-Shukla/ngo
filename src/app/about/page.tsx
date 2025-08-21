@@ -104,7 +104,7 @@ export default function AboutPage() {
             <div className="bg-card p-6 rounded-lg shadow-lg border border-border text-center hover:shadow-xl transition-shadow duration-300">
               <div className="w-32 h-32 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/sandhyachauhan.jpeg"
+                  src="/images/sandhyachauhan.jpg"
                   alt="Sandhya Chauhan - Director"
                   width={128}
                   height={128}
@@ -123,7 +123,7 @@ export default function AboutPage() {
             <div className="bg-card p-6 rounded-lg shadow-lg border border-border text-center hover:shadow-xl transition-shadow duration-300">
               <div className="w-32 h-32 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/swatishukla.jpeg"
+                  src="/images/swatishukla.jpg"
                   alt="Swati Shukla - Managing Director"
                   width={128}
                   height={128}
@@ -142,7 +142,7 @@ export default function AboutPage() {
             <div className="bg-card p-6 rounded-lg shadow-lg border border-border text-center hover:shadow-xl transition-shadow duration-300">
               <div className="w-32 h-32 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/anijlkumar.jpeg"
+                  src="/images/anijlkumar.jpg"
                   alt="Anil Kumar Shukla - Chief Adviser"
                   width={128}
                   height={128}
@@ -161,7 +161,7 @@ export default function AboutPage() {
             <div className="bg-card p-6 rounded-lg shadow-lg border border-border text-center hover:shadow-xl transition-shadow duration-300">
               <div className="w-32 h-32 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/shubham.jpeg"
+                  src="/images/shubham.jpg"
                   alt="Shubham - Volunteer Coordinator"
                   width={128}
                   height={128}
