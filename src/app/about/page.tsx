@@ -175,6 +175,25 @@ export default function AboutPage() {
                 Ensuring smooth coordination between volunteers and community needs.
               </p>
             </div>
+
+            {/* Team Member 5 - Vajrika Nath */}
+            <div className="bg-card p-6 rounded-lg shadow-lg border border-border text-center hover:shadow-xl transition-shadow duration-300">
+              <div className="w-32 h-32 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                <Image
+                  src="/images/vajrikaNath.jpeg"
+                  alt="Vajrika Nath - Program Coordinator"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="font-semibold text-lg mb-1">Mr. Vajrika Nath</h3>
+              <p className="text-sm text-primary font-medium mb-3">Program Coordinator</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Managing and coordinating our programs and community outreach initiatives. 
+                Ensuring smooth coordination between programs and community needs.
+              </p>
+            </div>
           </div>
         </div>
       </section>

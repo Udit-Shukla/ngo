@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ShareButton from "@/components/ShareButton";
 
 export default function DonatePage() {
   const donationOptions = [
@@ -105,7 +106,7 @@ export default function DonatePage() {
                 <div className="text-center mb-4">
                   <h3 className="text-xl font-semibold text-card-foreground mb-2">{option.title}</h3>
                   {option.amount > 0 ? (
-                    <div className="text-3xl font-bold text-primary mb-2">${option.amount}</div>
+                    <div className="text-3xl font-bold text-primary mb-2">₹{option.amount}</div>
                   ) : (
                     <div className="text-3xl font-bold text-primary mb-2">Custom</div>
                   )}
@@ -117,7 +118,7 @@ export default function DonatePage() {
                 </div>
 
                 <button className="w-full bg-primary text-primary-foreground py-3 px-4 rounded-md font-medium hover:bg-primary/90 transition-colors">
-                  {option.amount > 0 ? `Donate $${option.amount}` : 'Choose Amount'}
+                  {option.amount > 0 ? `Donate ₹${option.amount}` : 'Choose Amount'}
                 </button>
               </div>
             ))}
@@ -188,7 +189,10 @@ export default function DonatePage() {
               </div>
               <h3 className="font-semibold text-lg mb-2">Volunteer</h3>
               <p className="text-muted-foreground mb-4">Join our team and contribute your time and skills to our projects.</p>
-              <Link href="/volunteer" className="text-primary hover:underline">
+              <Link 
+                href="/volunteer" 
+                className="w-full bg-primary text-primary-foreground py-3 px-4 rounded-md font-medium hover:bg-primary/90 transition-colors block text-center"
+              >
                 Learn More →
               </Link>
             </div>
@@ -199,10 +203,8 @@ export default function DonatePage() {
               </div>
               <h3 className="font-semibold text-lg mb-2">Spread the Word</h3>
               <p className="text-muted-foreground mb-4">Share our mission with your network and help us reach more people.</p>
-              <div className="flex justify-center gap-4">
-                <button className="text-primary hover:underline">Facebook</button>
-                <button className="text-primary hover:underline">Twitter</button>
-                <button className="text-primary hover:underline">LinkedIn</button>
+              <div className="flex justify-center">
+                <ShareButton />
               </div>
             </div>
             
@@ -212,7 +214,10 @@ export default function DonatePage() {
               </div>
               <h3 className="font-semibold text-lg mb-2">Corporate Partnership</h3>
               <p className="text-muted-foreground mb-4">Partner with us for CSR initiatives and create larger impact together.</p>
-              <Link href="/contact" className="text-primary hover:underline">
+              <Link 
+                href="/contact" 
+                className="w-full bg-primary text-primary-foreground py-3 px-4 rounded-md font-medium hover:bg-primary/90 transition-colors block text-center"
+              >
                 Contact Us →
               </Link>
             </div>
