@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Target, Users, BookOpen, Heart, Users2, Shield, TrendingUp, BarChart3, Camera, UserCheck } from "lucide-react";
 
 export default function VolunteerPage() {
   const volunteerOpportunities = [
@@ -96,22 +97,22 @@ export default function VolunteerPage() {
 
   const volunteerBenefits = [
     {
-      icon: "🎯",
+      icon: <Target className="w-8 h-8 text-primary" />,
       title: "Make Real Impact",
       description: "Directly contribute to positive change in communities"
     },
     {
-      icon: "🤝",
+      icon: <Users className="w-8 h-8 text-primary" />,
       title: "Build Connections",
       description: "Meet like-minded people and build meaningful relationships"
     },
     {
-      icon: "📚",
+      icon: <BookOpen className="w-8 h-8 text-primary" />,
       title: "Learn & Grow",
       description: "Gain new skills and valuable experience in social work"
     },
     {
-      icon: "💝",
+      icon: <Heart className="w-8 h-8 text-primary" />,
       title: "Personal Fulfillment",
       description: "Experience the joy of helping others and making a difference"
     }
@@ -138,7 +139,7 @@ export default function VolunteerPage() {
             {volunteerBenefits.map((benefit, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">{benefit.icon}</span>
+                  {benefit.icon}
                 </div>
                 <h3 className="font-semibold text-lg mb-2">{benefit.title}</h3>
                 <p className="text-muted-foreground text-sm">{benefit.description}</p>
@@ -311,7 +312,7 @@ export default function VolunteerPage() {
             <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mr-4">
-                  <span className="text-muted-foreground">👤</span>
+                  <UserCheck className="w-6 h-6 text-muted-foreground" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Sarah Johnson</h3>
@@ -327,7 +328,7 @@ export default function VolunteerPage() {
             <div className="bg-card p-6 rounded-lg shadow-sm border border-border">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mr-4">
-                  <span className="text-muted-foreground">👤</span>
+                  <Heart className="w-6 h-6 text-muted-foreground" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Michael Chen</h3>

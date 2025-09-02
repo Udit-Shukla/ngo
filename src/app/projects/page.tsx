@@ -27,7 +27,7 @@ export default function ProjectsPage() {
       title: "Child Education",
       category: "Education",
       description: "Ensuring quality education for every child through comprehensive learning programs and educational support systems.",
-      impact: "500+ children enrolled",
+      impact: "50+ children enrolled",
       status: "Active",
       image: "/logo.webp",
       details: [
@@ -42,7 +42,7 @@ export default function ProjectsPage() {
       title: "Women Empowerment",
       category: "Social Development",
       description: "Empowering women through skill development, leadership training, and economic independence programs.",
-      impact: "300+ women empowered",
+      impact: "50+ women empowered",
       status: "Active",
       image: "/logo.webp",
       details: [
@@ -57,7 +57,7 @@ export default function ProjectsPage() {
       title: "Basic Human Needs",
       category: "Social Welfare",
       description: "Addressing fundamental human needs including food, shelter, and essential services for vulnerable communities.",
-      impact: "1000+ families supported",
+      impact: "100+ families supported",
       status: "Active",
       image: "/logo.webp",
       details: [
@@ -72,7 +72,7 @@ export default function ProjectsPage() {
       title: "Medical Health Care",
       category: "Healthcare",
       description: "Providing comprehensive healthcare services, medical camps, and health awareness programs for communities.",
-      impact: "2000+ people treated",
+      impact: "1000+ people treated",
       status: "Active",
       image: "/logo.webp",
       details: [
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
       title: "Environment Conservation",
       category: "Environment",
       description: "Promoting environmental awareness, tree plantation, and sustainable practices for a greener future.",
-      impact: "5000+ trees planted",
+      impact: "100+ trees planted",
       status: "Active",
       image: "/logo.webp",
       details: [
@@ -102,7 +102,7 @@ export default function ProjectsPage() {
       title: "Women's Rights",
       category: "Advocacy",
       description: "Advocating for women's rights, legal awareness, and gender equality through education and support programs.",
-      impact: "200+ women supported",
+      impact: "50+ women supported",
       status: "Active",
       image: "/logo.webp",
       details: [
@@ -117,7 +117,7 @@ export default function ProjectsPage() {
       title: "Poverty Eradication",
       category: "Economic Development",
       description: "Working towards poverty eradication through skill development, economic opportunities, and sustainable livelihood programs.",
-      impact: "500+ families uplifted",
+      impact: "50+ families uplifted",
       status: "Active",
       image: "/logo.webp",
       details: [
@@ -159,15 +159,15 @@ export default function ProjectsPage() {
               <div className="text-muted-foreground">Elderly Served</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-4xl font-bold text-primary mb-2">50+</div>
               <div className="text-muted-foreground">Children Educated</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">2000+</div>
+              <div className="text-4xl font-bold text-primary mb-2">1000+</div>
               <div className="text-muted-foreground">People Treated</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">300+</div>
+              <div className="text-4xl font-bold text-primary mb-2">50+</div>
               <div className="text-muted-foreground">Women Empowered</div>
             </div>
           </div>

@@ -5,40 +5,40 @@ export default function DonatePage() {
   const donationOptions = [
     {
       id: 1,
-      title: "Education Fund",
-      amount: 25,
-      description: "Provide school supplies and books for one child for a month",
-      impact: "Helps 1 child access education",
+      title: "Educational Fund",
+      amount: 1500,
+      description: "Provide school supplies and books for children",
+      impact: "Helps children access quality education",
       popular: false
     },
     {
       id: 2,
       title: "Clean Water",
-      amount: 50,
+      amount: 1000,
       description: "Contribute to building water purification systems",
-      impact: "Provides clean water for 10 families",
+      impact: "Provides clean water for families",
       popular: true
     },
     {
       id: 3,
-      title: "Healthcare Camp",
-      amount: 100,
+      title: "Health Care Camp",
+      amount: 500,
       description: "Support free medical check-ups and awareness programs",
-      impact: "Treats 50 people in healthcare camps",
+      impact: "Treats people in healthcare camps",
       popular: false
     },
     {
       id: 4,
       title: "Women Empowerment",
-      amount: 75,
+      amount: 1000,
       description: "Support skill development and entrepreneurship training",
-      impact: "Empowers 3 women with new skills",
+      impact: "Empowers women with new skills",
       popular: false
     },
     {
       id: 5,
       title: "Emergency Relief",
-      amount: 150,
+      amount: 500,
       description: "Provide immediate aid during disasters and emergencies",
       impact: "Supports emergency response efforts",
       popular: false
@@ -54,10 +54,10 @@ export default function DonatePage() {
   ];
 
   const impactStats = [
-    { number: "500+", label: "Children Educated" },
+    { number: "50+", label: "Children Educated" },
     { number: "10+", label: "Villages with Clean Water" },
-    { number: "2000+", label: "People Treated" },
-    { number: "300+", label: "Women Empowered" }
+    { number: "1000+", label: "People Treated" },
+    { number: "50+", label: "Women Empowered" }
   ];
 
   return (

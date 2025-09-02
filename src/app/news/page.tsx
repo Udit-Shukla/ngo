@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { BarChart3, Camera, Users, TrendingUp, Heart, BookOpen, Shield, Users2 } from "lucide-react";
 
 export default function NewsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -348,7 +349,7 @@ export default function NewsPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-card p-6 rounded-lg shadow-sm border border-border text-center">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-primary text-2xl">📊</span>
+                <BarChart3 className="w-8 h-8 text-primary" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Impact Reports</h3>
               <p className="text-muted-foreground mb-4">Access detailed reports on our programs and their outcomes.</p>
@@ -359,7 +360,7 @@ export default function NewsPage() {
             
             <div className="bg-card p-6 rounded-lg shadow-sm border border-border text-center">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-primary text-2xl">📸</span>
+                <Camera className="w-8 h-8 text-primary" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Photo Gallery</h3>
               <p className="text-muted-foreground mb-4">See visual stories of our work and community impact.</p>
@@ -370,7 +371,7 @@ export default function NewsPage() {
             
             <div className="bg-card p-6 rounded-lg shadow-sm border border-border text-center">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-primary text-2xl">🤝</span>
+                <Users2 className="w-8 h-8 text-primary" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Get Involved</h3>
               <p className="text-muted-foreground mb-4">Join our mission through volunteering or donations.</p>

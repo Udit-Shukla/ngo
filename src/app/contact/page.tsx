@@ -23,9 +23,8 @@ export default function ContactPage() {
       icon: <Phone className="w-8 h-8 text-primary" />,
       title: "Phone",
       details: [
-        "+91 (XXX) XXX-XXXX",
-        "+91 (XXX) XXX-XXXX",
-        "Emergency: +91 (XXX) XXX-XXXX"
+        "+91 794666284",
+        "+91 9793957185",
       ]
     },
     {
@@ -44,7 +43,7 @@ export default function ContactPage() {
     { name: "Twitter", icon: <Twitter className="w-5 h-5" />, url: "#" },
     { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: "https://instagram.com/swadhya_foundation312" },
     { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, url: "#" },
-    { name: "YouTube", icon: <Youtube className="w-5 h-5" />, url: "#" }
+    { name: "YouTube", icon: <Youtube className="w-5 h-5" />, url: "https://youtube.com/@Swadhyafoundation" }
   ];
 
   return (
@@ -280,13 +279,13 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white/10 p-6 rounded-lg">
               <h3 className="font-semibold text-lg mb-2">Emergency Hotline</h3>
-              <p className="text-2xl font-bold mb-2">+91 (XXX) XXX-XXXX</p>
+              <p className="text-2xl font-bold mb-2">+91 794666284</p>
               <p className="text-sm opacity-90">Available 24/7 for emergency situations</p>
             </div>
             <div className="bg-white/10 p-6 rounded-lg">
-              <h3 className="font-semibold text-lg mb-2">Disaster Response</h3>
-              <p className="text-2xl font-bold mb-2">+91 (XXX) XXX-XXXX</p>
-              <p className="text-sm opacity-90">For disaster relief and emergency aid</p>
+              <h3 className="font-semibold text-lg mb-2">General Contact</h3>
+              <p className="text-2xl font-bold mb-2">+91 9793957185</p>
+              <p className="text-sm opacity-90">For general inquiries and support</p>
             </div>
           </div>
         </div>
