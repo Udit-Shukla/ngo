@@ -7,7 +7,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="w-full py-20 px-4 text-center bg-card">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-primary tracking-tight">About Swadhyay Foundation</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-primary tracking-tight">About Swadhya Foundation</h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Learn about our journey, mission, and the dedicated team working to promote moral values, self-development, and self-discipline in society.
           </p>
@@ -187,7 +187,7 @@ export default function AboutPage() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="font-semibold text-lg mb-1">Mr. Vajrika Nath</h3>
+              <h3 className="font-semibold text-lg mb-1">Miss Vajrika Nath</h3>
               <p className="text-sm text-primary font-medium mb-3">Program Coordinator</p>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Managing and coordinating our programs and community outreach initiatives. 

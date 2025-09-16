@@ -23,7 +23,7 @@ export default function ContactPage() {
       icon: <Phone className="w-8 h-8 text-primary" />,
       title: "Phone",
       details: [
-        "+91 794666284",
+        "+91 9794666284",
         "+91 9793957185",
       ]
     },

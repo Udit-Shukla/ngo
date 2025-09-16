@@ -3,108 +3,206 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Camera, Users, Heart, Shield, Calendar, UserCheck } from "lucide-react";
+
+type GalleryItem = {
+  id: number;
+  title: string;
+  category: string;
+  image: string;
+  date: string;
+};
 
 export default function GalleryPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
 
-  const categories = ["All", "Education", "Healthcare", "Water Projects", "Women Empowerment", "Environmental", "Events", "Volunteers"];
+  const categories = [
+    { name: "All", icon: <Camera className="w-4 h-4" /> },
+    { name: "Education", icon: <Users className="w-4 h-4" /> },
+    { name: "Healthcare", icon: <Heart className="w-4 h-4" /> },
+    { name: "Women Empowerment", icon: <Shield className="w-4 h-4" /> },
+    { name: "Events", icon: <Calendar className="w-4 h-4" /> },
+    { name: "Volunteers", icon: <UserCheck className="w-4 h-4" /> }
+  ];
 
-  const galleryItems = [
+  // Gallery items with manual categorization
+  // You can easily update the category for each photo by looking at the image
+  const galleryItems: GalleryItem[] = [
     {
       id: 1,
-      title: "Children Learning in Our Education Center",
-      category: "Education",
-      description: "Students engaged in interactive learning activities",
-      image: "/logo.webp", // Replace with actual image
-      date: "2024"
+      title: "Swadhyay Foundation Activity 1",
+      category: "Events", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.10.jpeg",
+      date: "2025"
     },
     {
       id: 2,
-      title: "Healthcare Camp in Rural Village",
-      category: "Healthcare",
-      description: "Free medical check-ups for community members",
-      image: "/logo.webp",
-      date: "2024"
+      title: "Swadhyay Foundation Activity 2", 
+      category: "Events", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.13 (1).jpeg",
+      date: "2025"
     },
     {
       id: 3,
-      title: "Clean Water Project Completion",
-      category: "Water Projects",
-      description: "Celebrating the completion of water purification system",
-      image: "/logo.webp",
-      date: "2024"
+      title: "Swadhyay Foundation Activity 3",
+      category: "Events", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.13.jpeg",
+      date: "2025"
     },
     {
       id: 4,
-      title: "Women's Skill Development Workshop",
-      category: "Women Empowerment",
-      description: "Training session on entrepreneurship and financial literacy",
-      image: "/logo.webp",
-      date: "2024"
+      title: "Swadhyay Foundation Activity 4",
+      category: "Events", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.14 (1).jpeg",
+      date: "2025"
     },
     {
       id: 5,
-      title: "Tree Plantation Drive",
-      category: "Environmental",
-      description: "Community members planting trees for environmental conservation",
-      image: "/logo.webp",
-      date: "2024"
+      title: "Swadhyay Foundation Activity 5",
+      category: "Events", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.14.jpeg",
+      date: "2025"
     },
     {
       id: 6,
-      title: "Annual Volunteer Recognition Event",
-      category: "Events",
-      description: "Celebrating our dedicated volunteers and their contributions",
-      image: "/logo.webp",
-      date: "2024"
+      title: "Swadhyay Foundation Activity 6",
+      category: "Volunteers", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.15 (1).jpeg",
+      date: "2025"
     },
     {
       id: 7,
-      title: "Volunteer Teaching Session",
-      category: "Volunteers",
-      description: "Our volunteers conducting educational sessions",
-      image: "/logo.webp",
-      date: "2024"
+      title: "Swadhyay Foundation Activity 7",
+      category: "Volunteers", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.15 (2).jpeg",
+      date: "2025"
     },
     {
       id: 8,
-      title: "Computer Literacy Class",
-      category: "Education",
-      description: "Students learning basic computer skills",
-      image: "/logo.webp",
-      date: "2024"
+      title: "Swadhyay Foundation Activity 8",
+      category: "Volunteers", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.15.jpeg",
+      date: "2025"
     },
     {
       id: 9,
-      title: "Vaccination Drive",
-      category: "Healthcare",
-      description: "Immunization program for children and adults",
-      image: "/logo.webp",
-      date: "2024"
+      title: "Swadhyay Foundation Activity 9",
+      category: "Education", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.16 (1).jpeg",
+      date: "2025"
     },
     {
       id: 10,
-      title: "Water Well Installation",
-      category: "Water Projects",
-      description: "Installing hand pumps in rural communities",
-      image: "/logo.webp",
-      date: "2024"
+      title: "Swadhyay Foundation Activity 10",
+      category: "Volunteer", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.16.jpeg",
+      date: "2025"
     },
     {
       id: 11,
-      title: "Women's Leadership Training",
-      category: "Women Empowerment",
-      description: "Empowering women with leadership and communication skills",
-      image: "/logo.webp",
-      date: "2024"
+      title: "Swadhyay Foundation Activity 11",
+      category: "Education", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.17 (1).jpeg",
+      date: "2025"
     },
     {
       id: 12,
-      title: "Community Clean-up Campaign",
-      category: "Environmental",
-      description: "Volunteers cleaning up local areas and promoting waste management",
-      image: "/logo.webp",
-      date: "2024"
+      title: "Swadhyay Foundation Activity 12",
+      category: "Education", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.17.jpeg",
+      date: "2025"
+    },
+    {
+      id: 13,
+      title: "Swadhyay Foundation Activity 13",
+      category: "Women Empowerment", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.18 (1).jpeg",
+      date: "2025"
+    },
+    {
+      id: 14,
+      title: "Swadhyay Foundation Activity 14",
+      category: "Women Empowerment", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.18.jpeg",
+      date: "2025"
+    },
+    {
+      id: 15,
+      title: "Swadhyay Foundation Activity 15",
+      category: "Women Empowerment", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.19 (1).jpeg",
+      date: "2025"
+    },
+    {
+      id: 16,
+      title: "Swadhyay Foundation Activity 16",
+      category: "Education", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.19.jpeg",
+      date: "2025"
+    },
+    {
+      id: 17,
+      title: "Swadhyay Foundation Activity 17",
+      category: "Education", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.20 (1).jpeg",
+      date: "2025"
+    },
+    {
+      id: 18,
+      title: "Swadhyay Foundation Activity 18",
+      category: "Education", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.20.jpeg",
+      date: "2025"
+    },
+    {
+      id: 19,
+      title: "Swadhyay Foundation Activity 19",
+      category: "Education", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.21.jpeg",
+      date: "2025"
+    },
+    {
+      id: 20,
+      title: "Swadhyay Foundation Activity 20",
+      category: "Education", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.22.jpeg",
+      date: "2025"
+    },
+    {
+      id: 21,
+      title: "Swadhyay Foundation Activity 21",
+      category: "Education", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.23.jpeg",
+      date: "2025"
+    },
+    {
+      id: 22,
+      title: "Swadhyay Foundation Activity 22",
+      category: "Healthcare", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.24.jpeg",
+      date: "2025"
+    },
+    {
+      id: 23,
+      title: "Swadhyay Foundation Activity 23",
+      category: "Healthcare", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.25 (1).jpeg",
+      date: "2025"
+    },
+    {
+      id: 24,
+      title: "Swadhyay Foundation Activity 24",
+      category: "Healthcare", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.25.jpeg",
+      date: "2025"
+    },
+    {
+      id: 25,
+      title: "Swadhyay Foundation Activity 25",
+      category: "Healthcare", // Update this based on what you see in the image
+      image: "/gallery/WhatsApp Image 2025-07-11 at 11.37.26.jpeg",
+      date: "2025"
     }
   ];
 
@@ -119,7 +217,7 @@ export default function GalleryPage() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-primary tracking-tight">Photo Gallery</h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore our work through photos and stories. See the real impact we&apos;re making 
+            Explore our work through photos. See the real impact we&apos;re making 
             in communities and the faces behind our mission.
           </p>
         </div>
@@ -130,11 +228,11 @@ export default function GalleryPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-4xl font-bold text-primary mb-2">{galleryItems.length}</div>
               <div className="text-muted-foreground">Photos Captured</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
+              <div className="text-4xl font-bold text-primary mb-2">25+</div>
               <div className="text-muted-foreground">Events Documented</div>
             </div>
             <div className="text-center">
@@ -142,7 +240,7 @@ export default function GalleryPage() {
               <div className="text-muted-foreground">Lives Touched</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">8</div>
+              <div className="text-4xl font-bold text-primary mb-2">7</div>
               <div className="text-muted-foreground">Project Categories</div>
             </div>
           </div>
@@ -155,15 +253,16 @@ export default function GalleryPage() {
           <div className="flex flex-wrap gap-3 justify-center">
             {categories.map((category) => (
               <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-2 rounded-full border transition-colors ${
-                  selectedCategory === category
+                key={category.name}
+                onClick={() => setSelectedCategory(category.name)}
+                className={`px-6 py-3 rounded-full border transition-colors flex items-center gap-2 ${
+                  selectedCategory === category.name
                     ? "bg-primary text-primary-foreground border-primary"
                     : "border-border text-foreground hover:border-primary hover:text-primary"
                 }`}
               >
-                {category}
+                {category.icon}
+                {category.name}
               </button>
             ))}
           </div>
@@ -173,37 +272,32 @@ export default function GalleryPage() {
       {/* Gallery Grid */}
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {filteredItems.map((item) => (
-              <div key={item.id} className="bg-card rounded-lg shadow-sm border border-border overflow-hidden hover:shadow-md transition-shadow group">
-                <div className="relative h-64 bg-muted">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-                      {item.category}
-                    </span>
-                  </div>
-                  <div className="absolute top-4 right-4">
-                    <span className="bg-background/90 text-foreground px-3 py-1 rounded-full text-sm">
-                      {item.date}
-                    </span>
-                  </div>
+              <div 
+                key={item.id} 
+                className="relative aspect-square bg-muted rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer"
+                onClick={() => setSelectedImage(item)}
+              >
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+                <div className="absolute top-2 left-2">
+                  <span className="bg-primary/90 text-primary-foreground px-2 py-1 rounded-full text-xs font-medium">
+                    {item.category}
+                  </span>
                 </div>
-                <div className="p-6">
-                  <h3 className="font-semibold text-lg mb-2 text-card-foreground group-hover:text-primary transition-colors">
+                <div className="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-white text-sm font-medium truncate">
                     {item.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    {item.description}
+                  <p className="text-white/80 text-xs">
+                    {item.date}
                   </p>
-                  <button className="text-primary hover:text-primary/80 text-sm font-medium transition-colors">
-                    View Full Story →
-                  </button>
                 </div>
               </div>
             ))}
@@ -211,50 +305,39 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Featured Story */}
+      {/* Featured Photos */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-primary text-center mb-12">Featured Story</h2>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-96 bg-muted rounded-lg overflow-hidden">
-              <Image
-                src="/logo.webp"
-                alt="Featured Story"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="space-y-6">
-              <div>
-                <span className="text-primary font-medium">Education • 2024</span>
-                <h3 className="text-2xl font-bold text-card-foreground mt-2">
-                  Transforming Lives Through Education
-                </h3>
+          <h2 className="text-3xl font-bold text-primary text-center mb-12">Featured Photos</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {galleryItems.slice(0, 6).map((item) => (
+              <div 
+                key={item.id}
+                className="relative aspect-video bg-muted rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 group cursor-pointer"
+                onClick={() => setSelectedImage(item)}
+              >
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                    {item.category}
+                  </span>
+                </div>
+                <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-white text-lg font-semibold mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-white/80 text-sm">
+                    {item.date}
+                  </p>
+                </div>
               </div>
-              <p className="text-muted-foreground leading-relaxed">
-                This year, we reached a milestone of educating over 500 children in rural communities. 
-                Our education centers provide not just basic literacy, but also computer skills, 
-                life skills, and confidence building activities.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                The transformation we&apos;ve seen in these children is remarkable. From shy, 
-                hesitant learners to confident, curious minds ready to take on the world.
-              </p>
-              <div className="flex gap-4">
-                <Link
-                  href="/projects"
-                  className="bg-primary text-primary-foreground px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition-colors"
-                >
-                  Learn More
-                </Link>
-                <Link
-                  href="/donate"
-                  className="border border-primary text-primary px-6 py-3 rounded-md font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  Support This Work
-                </Link>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -262,9 +345,9 @@ export default function GalleryPage() {
       {/* Call to Action */}
       <section className="py-16 px-4 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Be Part of Our Story</h2>
+          <h2 className="text-3xl font-bold mb-4">Be Part of Our Journey</h2>
           <p className="text-lg mb-8 opacity-90">
-            These photos tell the story of real change happening in communities. 
+            These photos capture the real impact we&apos;re making in communities. 
             You can be part of creating more moments like these.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -283,6 +366,44 @@ export default function GalleryPage() {
           </div>
         </div>
       </section>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-4xl max-h-[90vh] w-full">
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+            >
+              ✕
+            </button>
+            <div className="relative aspect-video bg-muted rounded-lg overflow-hidden">
+              <Image
+                src={selectedImage.image}
+                alt={selectedImage.title}
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="bg-white p-6 rounded-b-lg">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                  {selectedImage.category}
+                </span>
+                <span className="text-muted-foreground text-sm">
+                  {selectedImage.date}
+                </span>
+              </div>
+              <h3 className="text-xl font-semibold text-foreground">
+                {selectedImage.title}
+              </h3>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 } 
