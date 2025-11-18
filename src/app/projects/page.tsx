@@ -126,6 +126,21 @@ export default function ProjectsPage() {
         "Financial literacy programs",
         "Sustainable livelihood creation"
       ]
+    },
+    {
+      id: 9,
+      title: "Learn without Limits",
+      category: "Education",
+      description: "Empowering children with unlimited learning opportunities through innovative educational programs, digital literacy, and holistic development initiatives.",
+      impact: "50+ children enrolled",
+      status: "Active",
+      image: "/logo.webp",
+      details: [
+        "Interactive learning sessions",
+        "Digital literacy and computer skills",
+        "Creative arts and extracurricular activities",
+        "Mentorship and career guidance programs"
+      ]
     }
   ];
 

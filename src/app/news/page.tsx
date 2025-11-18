@@ -3,18 +3,32 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { BarChart3, Camera, Users, TrendingUp, Heart, BookOpen, Shield, Users2 } from "lucide-react";
+import { BarChart3, Camera, Users2 } from "lucide-react";
 
 export default function NewsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedYear, setSelectedYear] = useState("All");
 
   const categories = ["All", "Project Updates", "Impact Stories", "Volunteer News", "Community Events", "Announcements", "Success Stories"];
-  const years = ["All", "2024", "2023", "2022"];
+  const years = ["All", "2025", "2024", "2023", "2022"];
 
   const newsItems = [
     {
       id: 1,
+      title: "Launch of 'Learn without Limits' Campaign for Children",
+      category: "Announcements",
+      date: "January 15, 2025",
+      year: "2025",
+      excerpt: "We're thrilled to announce the launch of our new 'Learn without Limits' campaign, empowering children with unlimited learning opportunities through innovative educational programs and holistic development.",
+      content: "Swadhyay Foundation is excited to launch our groundbreaking 'Learn without Limits' campaign, a comprehensive educational initiative designed to empower children with unlimited learning opportunities. This innovative program focuses on digital literacy, creative arts, interactive learning sessions, and mentorship programs to ensure every child reaches their full potential. The campaign aims to break barriers in education and provide holistic development opportunities for children across our communities.",
+      image: "/logo.webp",
+      featured: true,
+      tags: ["Education", "Children", "Campaign Launch", "Innovation"],
+      readTime: "4 min read",
+      author: "Education Team"
+    },
+    {
+      id: 2,
       title: "New Education Center Opens in Rural Village",
       category: "Project Updates",
       date: "December 15, 2024",
@@ -22,13 +36,13 @@ export default function NewsPage() {
       excerpt: "We're excited to announce the opening of our newest education center, providing quality education to 50+ children in rural communities.",
       content: "Our latest education center in the rural village of [Village Name] has officially opened its doors. This facility will serve over 50 children who previously had limited access to quality education. The center includes modern classrooms, computer labs, and dedicated spaces for extracurricular activities.",
       image: "/logo.webp",
-      featured: true,
+      featured: false,
       tags: ["Education", "Rural Development", "Infrastructure"],
       readTime: "3 min read",
       author: "Swadhyay Foundation Team"
     },
     {
-      id: 2,
+      id: 3,
       title: "Healthcare Camp Serves 200+ People",
       category: "Impact Stories",
       date: "December 10, 2024",
@@ -42,7 +56,7 @@ export default function NewsPage() {
       author: "Healthcare Team"
     },
     {
-      id: 3,
+      id: 4,
       title: "Women Empowerment Program Graduates 25 Women",
       category: "Success Stories",
       date: "December 5, 2024",
@@ -56,7 +70,7 @@ export default function NewsPage() {
       author: "Women Empowerment Team"
     },
     {
-      id: 4,
+      id: 5,
       title: "Volunteer Recognition Event Highlights",
       category: "Volunteer News",
       date: "November 30, 2024",
@@ -70,7 +84,7 @@ export default function NewsPage() {
       author: "Volunteer Coordinator"
     },
     {
-      id: 5,
+      id: 6,
       title: "Water Project Completion in Three Villages",
       category: "Project Updates",
       date: "November 25, 2024",
@@ -84,7 +98,7 @@ export default function NewsPage() {
       author: "Infrastructure Team"
     },
     {
-      id: 6,
+      id: 7,
       title: "Environmental Conservation Drive Results",
       category: "Community Events",
       date: "November 20, 2024",
@@ -98,7 +112,7 @@ export default function NewsPage() {
       author: "Environmental Team"
     },
     {
-      id: 7,
+      id: 8,
       title: "New Partnership with Local Hospital",
       category: "Announcements",
       date: "November 15, 2024",
@@ -112,7 +126,7 @@ export default function NewsPage() {
       author: "Partnership Team"
     },
     {
-      id: 8,
+      id: 9,
       title: "Annual Impact Report Released",
       category: "Announcements",
       date: "November 10, 2024",
@@ -329,7 +343,7 @@ export default function NewsPage() {
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-white/20"
+                className="flex-1 px-4 py-3 rounded-md border border-white/30 bg-white/10 text-primary-foreground placeholder:text-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-white/50"
               />
               <button className="bg-white text-primary px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
                 Subscribe
