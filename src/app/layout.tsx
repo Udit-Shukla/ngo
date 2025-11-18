@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
+import { Analytics } from "@vercel/analytics/next";
 import MobileNav from "@/components/MobileNav";
 import "./globals.css";
 
@@ -75,6 +76,7 @@ export default function RootLayout({
           <MobileNav />
         </nav>
         {children}
+        <Analytics />
       </body>
     </html>
   );
